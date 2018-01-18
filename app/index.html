@@ -1,3 +1,15 @@
+<!-- 
+Things to do:
+-JS slider
+-fade in on load 
+-fade out after clicking link
+-
+
+Things like line-height kinda throws off a lot of the ppixel perfect-ness when measuring in photoshop... how do others do it... does everyone use that pixel perfect plugin in chrome too?...
+
+
+ -->
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,176 +17,47 @@
 	<link rel="stylesheet" type="text/css" href="./css/top.css">
 </head>
 <body>
-<section id="section01">
-	<a href="#" class="phone-number">TEL: 555-555-55555</a> <!-- tag is best for phone number?? -->
-	<div class="container-inner">
-		<h1>12345678</h1>
-		<p>SUPPLIERS OF STUFF</p>
-		<a href="#section02">FIND OUT SMORES</a>
-		<div class="down-arrow"></div>
+<section class="page-contents page-contents--hero-space">
+	<h1>Panorama</h1>
+	<div class="page-contents--hero-space__hero-image">
+		<img src="./images/Panorama-screenshot.png">
+	</div>
+	<div class="page-contents--hero-space__hero-content">
+		<h2 class="page-contents--hero-space__hero-title">Capture and share your best memories.</h2>
+		<p class="page-contents--hero-space__description">Nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed sitac amet vulputate mauris.</p>
+		<div class="page-contents--hero-space__download-space">
+			<p class="page-contents--hero-space__download-text">Download the app. It’s free!</p>
+			<a href="./images/Panorama-screenshot.png"><img src="./images/apple_icon.png"></a>
+			<a href="./images/Panorama-screenshot.png"><img src="./images/google_icon.png"></a>
+			
+		</div>
 	</div>
 </section>
-<header>
-	<div class="container-inner">
-		<div class="logo">
-			<img src="./images/logo.png" />
-		</div>
-		<ul>
-			<li><a href="#section01">HOME</a></li>
-			<li><a href="#">ABOUT</a></li>
-			<li><a href="#">SERVICE</a></li>
-			<li><a href="#">PROCESS</a></li>
-			<li><a href="#">CONTACT</a></li>
-		</ul>
-	</div>
+<header class="page-header">
+	<ul>
+		<li class="page-header__nav-link"><a href="#features">FEATURES</a></li>
+		<li class="page-header__nav-link"><a href="#video">VIDEO TOUR</a></li>
+		<li class="page-header__nav-link"><a href="#download">DOWNLOAD</a></li>
+	</ul>
 </header>
-<section id="section02">
-	<div class="container-inner">
-		<h2>About</h2>
-		<p class="section-explaination">explainationLorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-		<div class="pair-boxes">
-			<p>Unlike many Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is sim</p>
-			<p>For the Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industhe printing and typesetting industry.</p>
-		</div>
+<section id="features" class="page-contents page-contents--features">
+	<div class="page-contents--features__hero-content">
+		<h2 class="page-contents--features__hero-title">What makes Panorama unique!</h2>
+		<ul>
+			<li><h3 class="page-contents--features__feature-title">Feature One</h3><p class="page-contents--features__feature-description">Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum.</p></li>
+			<li><h3 class="page-contents--features__feature-title">Feature Two</h3><p class="page-contents--features__feature-description">Aenean sollicitudin, lorem quis bibendum. </p></li>
+			<li><h3 class="page-contents--features__feature-title">Feature Three</h3><p class="page-contents--features__feature-description">Lorem quis bidum auctor, nisi elit consequat.</p></li>
+			<li><h3 class="page-contents--features__feature-title">Feature Four</h3><p class="page-contents--features__feature-description">Proin gravida nibh bibendum auctor, nisi elit consequat ipsum, nec sagittis id elit.</p></li>
+		</ul>	
+	</div>
+	<div class="page-contents--features__hero-image">
+		<img src="./images/feature-s.png">
 	</div>
 </section>
-<section id="section03">
-	<div class="container-inner">
-		<h2>SERVICES</h2>
-		<p class="section-explaination">We can Lorem Ipsum isLorem Ipsum is</p>
-		<div class="icon-group">
-			<div class="service-icon">
-				<img src="./images/service-icon-1.png">
-				<p>Text and text</p>
-			</div>
-			<div class="service-icon">
-				<img src="./images/service-icon-2.png">
-				<p>Text and text</p>
-			</div>
-			<div class="service-icon">
-				<img src="./images/service-icon-3.png">
-				<p>Text and text</p>
-			</div>
-			<div class="service-icon">
-				<img src="./images/service-icon-4.png">
-				<p>Text and text</p>
-			</div>
-			<div class="service-icon">
-				<img src="./images/service-icon-5.png">
-				<p>Text and text</p>
-			</div>
-			<div class="service-icon">
-				<img src="./images/service-icon-6.png">
-				<p>Text and text</p>
-			</div>
-			<div class="service-icon">
-				<img src="./images/service-icon-7.png">
-				<p>Text and text</p>
-			</div>
-			<div class="service-icon">
-				<img src="./images/service-icon-8.png">
-				<p>Text and text</p>
-			</div>
-			<div class="service-icon">
-				<img src="./images/service-icon-9.png">
-				<p>Text and text</p>
-			</div>
-		</div>
-	</div>
-	<img class="background-shoe background-shoe--left" src="./images/shoe-1.png" alt="">
-	<img class="background-shoe background-shoe--right" src="./images/shoe-2.png" alt="">
-</section>
-<section id="section04">
-	<div class="container-inner">
-		<h2>OUR PROCESS</h2>
-		<span class="section-explaination">The team here at Lorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum is</span>
-		<div class="concept-row">
-			<div class="left-content">
-				<h3>Concept<br>& Design</h3>
-				<p>When it comes Lorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem I </p>
-				<p>All designs created sLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem I sLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem I sLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem I sLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem I sLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem I sLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem I </p>
-			</div>
-			<div class="right-content">
-				<img src="./images/shoes-concept.jpg" alt="">
-			</div>
-		</div>
-		<div class="technical-row">
-			<div class="left-content">
-				<img src="./images/shoes-concept.jpg" alt="">
-			</div>
-			<div class="right-content">
-				<h3>Concept<br>& Design</h3>
-				<p>When it comes Lorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem I </p>
-				<p>All designs created sLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem I sLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem I sLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem I sLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem I sLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem I sLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem I </p>
-			</div>
-		</div>
-		<div class="production-row">
-			<div class="left-content">
-				<h3>Concept<br>& Design</h3>
-				<p>When it comes Lorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem I </p>
-				<p>All designs created sLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem I sLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem I sLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem I sLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem I sLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem I sLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem I </p>
-			</div>
-			<div class="right-content">
-				<img src="./images/shoes-concept.jpg" alt="">
-			</div>
-		</div>
-		<div class="QC-row">
-			<div class="left-content">
-				<img src="./images/shoes-concept.jpg" alt="">
-			</div>
-			<div class="right-content">
-				<h3>Concept<br>& Design</h3>
-				<p>When it comes Lorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem I </p>
-				<p>All designs created sLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem I sLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem I sLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem I sLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem I sLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem I sLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem I </p>
-			</div>
-		</div>
-		<div class="customer-row">
-			<div class="left-content">
-				<h3>Concept<br>& Design</h3>
-				<p>When it comes Lorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem I </p>
-				<p>All designs created sLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem I sLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem I sLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem I sLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem I sLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem I sLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem I </p>
-			</div>
-			<div class="right-content">
-				<img src="./images/shoes-concept.jpg" alt="">
-			</div>
-		</div>
-		<div class="product-row">
-			<div class="left-content">
-				<img src="./images/shoes-concept.jpg" alt="">
-			</div>
-			<div class="right-content">
-				<h3>Concept<br>& Design</h3>
-				<p>When it comes Lorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem I </p>
-				<p>All designs created sLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem I sLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem I sLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem I sLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem I sLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem I sLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem I </p>
-			</div>
-		</div>
-		<div class="administration-row">
-			<div class="left-content">
-				<h3>Concept<br>& Design</h3>
-				<p>When it comes Lorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem I </p>
-				<p>All designs created sLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem I sLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem I sLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem I sLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem I sLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem I sLorem Ipsum isLorem Ipsum isLorem Ipsum isLorem I </p>
-			</div>
-			<div class="right-content">
-				<img src="./images/shoes-concept.jpg" alt="">
-			</div>
-		</div>
-	</div>
-</section>
-<section id="section05">
-	<div class="container-inner">
-		<h2>CONTACT</h2>
-		<div class="contact-icon">
-			<img src="" alt="">
-			<p>555-555-5555</p>
-		</div>
-		<div class="contact-icon">
-			<img src="" alt="">
-			<p>Long address Long address Long address Long address </p>
-		</div>
-		<div class="contact-icon">
-			<img src="" alt="">
-			<p>email@email.email</p>
-		</div>
+<section id="video" class="page-contents page-contents--video">
+	<iframe src="https://www.youtube.com/embed/W0LHTWG-UmQ?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=W0LHTWG-UmQ" frameborder="0" allowfullscreen></iframe>
+	<div class="page-contents--video__overlay">
+		<h2 class="page-contents--video__hero-title">See Panorama in action</h2>
 	</div>
 </section>
 <footer>

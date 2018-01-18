@@ -1,25 +1,17 @@
 @font-face {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Museo Sans', sans-serif;
   // do I need all these calls for font?
-  src: url( './../fonts/OpenSans-Bold.ttf'),
-  url( './../fonts/OpenSans-BoldItalic.ttf'),
-  url( './../fonts/OpenSans-ExtraBold.ttf'),
-  url( './../fonts/OpenSans-ExtraBoldItalic.ttf'),
-  url( './../fonts/OpenSans-Italic.ttf'),
-  url( './../fonts/OpenSans-Light.ttf'),
-  url( './../fonts/OpenSans-LightItalic.ttf'),
-  url( './../fonts/OpenSans-Regular.ttf'),
-  url( './../fonts/OpenSans-SemiBold.ttf'),
-  url( './../fonts/OpenSans-SemiBoldItalic.ttf')  ; 
+  src: url( './../fonts/MuseoSansCyrl_2.otf'); 
 
 }
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Museo Sans', sans-serif;
   line-height: 150%;
   box-sizing: border-box;
 }
 p {
 	margin: 0;
+  line-height: 175%;
 }
 .content-inner {
 	min-width: 1080px;
@@ -28,13 +20,14 @@ p {
 h2 {
   font-size: 25px;
   text-align: center;
-  margin-bottom: 45px;
+  line-height: 110%;
 }
 a {
+  transition: .7s; 
   text-decoration: none;
-  color: #FFF;
+  color: #000;
   &:visited {
-    color: #FFF;
+    color: #000;
   }
 }
 // need to add fonts

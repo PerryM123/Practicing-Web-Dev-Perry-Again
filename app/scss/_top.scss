@@ -1,4 +1,4 @@
-/* 
+/*
 Things to do later:
 -Change icons into svg
 
@@ -34,161 +34,148 @@ $color-orange: #ef4923;
 $section03-background: #0f7bd5;
 /* section01 */
 #section01 {
-	background: url('./../images/top-bg.jpg') no-repeat center center;
-	color: #FFF;
-	height: 637px;
-	padding: 30px 60px 0 60px;
-	text-align: center;
-	.phone-number {
-		font-size: 14px;
-		font-weight: bold;
-		text-align: right;
-		position: fixed;
-  	right: 50px;
-  	color: #FFF;
-    z-index: 9999;
-		&:after {
-			content: "";
-			background: url(../images/phone-circle.png) no-repeat 50%;
-			left: 15px;
-			padding-left: 10px;
-			position: relative;
-			}
-	}
-	.container-inner {
-		margin-top: 190px;
-		h1 {
-			font-size: 95px;
-			font-weight: bold;
-			margin-bottom: 30px;
-		}
-		p {
-			margin-bottom: 100px;
-		}
-		a {
-	    border: 3px solid #fff;
-	    background-color: transparent;
-	    color: #fff;
-	    display: inline-block;
-	    font-size: 18px;
-	    font-weight: 700;
-	    padding: 10px 0;
-	    text-decoration: none;
-	    width: 234px;
-		}
-	    .down-arrow {
-	    	background: url(../images/down-arrow.png) no-repeat center;
-			height: 100px;
-	    }
-	}
 }
-/* //section01 */
-/* section02 */
-#section02 {
-	.container-inner {
-		width: 600px;
-		margin: auto;
-		padding: 100px 0 160px 0;
-		.section-explaination {
-			margin-bottom: 45px;
-		}
-		.pair-boxes {
-			p {
-				width: 270px;
-				display: inline-block;
-				vertical-align: top;
-				&:nth-of-type(1) {
-					margin-right: 50px;
-				}
-			}
-		}
-	}
-}
-/* //section02 */
-/* section03 */
-#section03 {
-	background-color: $section03-background;
-	color: #FFF;
-	padding: 100px 0 160px 0;
-	position: relative;
-	.container-inner {
+
+.page-contents {
+	&--hero-space {
 		position: relative;
-		z-index: 3;
-		width: 620px;
-		margin: auto;
-		.section-explaination {
-			margin-bottom: 45px;
+		background-color: #87d37c; // or should I use 'background'???
+		padding: 80px 250px 240px; // should I try out
+		color: #fff;
+		&__hero-image {
+			position: absolute;
+		    left: 135px;
+		    top: 220px;
+		}
+		&__hero-title {
+			font-size: 36px;
+			margin: 0 0 23px;
+			padding: 104px 0 0;
+    		word-spacing: 6px;
+		}
+		&__hero-content {
+		    margin-left: 246px;
+		    min-width: 410px;
+		}
+		&__description {
+	    	margin: 0 0 70px 18px;
+		}
+		&__download-space {
+			max-width: 315px;
+			margin: 0 auto;
 			text-align: center;
 		}
-		.icon-group {
-			.service-icon {
-				display: inline-block;
-				width: 160px;
-				margin: 0 20px;
-				margin-bottom: 50px;
-				img {
-					width: 100%;
-					transition: .2s all;
-				}
-				p {
-					margin-top: 30px;
-					text-align: center;
-				}
-				&:hover {
-					img {
-						transform: scale(1.1);
-					}
-				}
+		&__download-text {
+			font-size: 14px;
+		    margin: 0 0 10px;
+		}
+		h1 {
+			font-size: 40px;
+			font-weight: bold;
+			text-align: center;
+			margin: 0 0 120px;
+			&:after {
+				content: "";
+				background: url(./../images/photo-camera.png) no-repeat center center;
+				padding-left: 80px;
+			}
+		}
+		a {
+			&:nth-of-type(1) {
+		    	margin-right: 6px;
 			}
 		}
 	}
-	.background-shoe {
-		z-index: 1;
-		position: absolute;
-		top: 10%;
-		&--left {
-			left: 30px;
-		}
-		&--right {
-			right: 30px;
-		}
-	}
-}
-/* //section03 */
-/* header */
-header {
-	.container-inner {
-		background: url(../images/header-background.png);
+	&--features {
 		position: relative;
-		.logo {
-	    	position: absolute;
-		    left: 15px;
-		    top: 20px;
+		padding: 150px 0 240px 117px;
+		color: #505050;
+		&__hero-image {
+		    position: absolute;
+		    right: 150px;
+		    top: 107px;
 		}
-		ul {
-			display: flex;
-			justify-content: center;
-	    align-items: center;
-			li {    
-				display: inline-block;
-				a {
-					padding: 30px 20px;
-					display: inline-block;
-					transition: .3s all;
-				}
-				.highlight {
-					background-color: $color-orange;
+		&__hero-title {
+		    font-size: 26px;
+		    margin: 0px 0px 33px;
+    		word-spacing: 3px;
+		}
+		&__hero-content {
+            max-width: 380px;
+		}
+		&__feature-title {
+			font-size: 18px;
+			margin: 0px 0 8px 10px;
+		}
+		&__feature-description {
+		    margin-left: 10px;
+		        line-height: 150%;
+		}
+		ul{
+			li {
+				color: #9a9a9a;
+				transition: .5s;
+				cursor: pointer;
+				margin: 0 0 28px;
+				&-active, &:hover {
+					color: #505050;
 				}
 			}
 		}
 	}
-	.fixed {
-    position: fixed;
-    z-index: 9998;
-    top: 0;
-    left: 0;
+	&--video {
+		position: relative;
+		color: #505050;
+		&__hero-title {
+		    font-size: 36px;
+		    margin: 0px 0px 33px;
+    		word-spacing: 3px;
+		}
+		&__hero-content {
+			background-color: #87d37c; 
+		}
+		&__overlay {
+			
+		    position: absolute;
+		    top: 0;
+		    left: 0;
+		    width: 100%;
+		    background: #87d37c;
+		    height: 100%;
+		    opacity: 0.7;
+		}
+		iframe {
+
     width: 100%;
-    text-align: center;
+    height: 610px;
+		}
 	}
 }
-/* //header */
+.page-header {
+	height: 80px;
+	background-color: #fafafa;
+	font-size: 14px;
+	&-fixed {
+		position: fixed;
+		top: 0;
+		left: 0;
+    	width: 100%;
+    	z-index: 9999;
+	}
+	ul {
+	    text-align: center;
+	}
+	.page-header__nav-link {
+		    display: inline-block;
+    padding: 28px 15px;
+    width: 120px;
+    box-sizing: border-box;
+		a {
+			color: #9b9b9b;
+			&-active, &:hover {
+				color: #3b3b3b;
+				font-weight: 700;
+			}
+		}
+	}
+}
