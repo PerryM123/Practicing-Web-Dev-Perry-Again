@@ -1,0 +1,181 @@
+/*
+Things to do later:
+-Change icons into svg
+
+-need to continue using BEM
+
+-section01 is a paralax image...
+
+-how does the div.blahblah-class {} work??
+
+-is box-sizing: border box global?
+
+-where do i put sass variables? Just add them to the top or
+ to their own files to be imported later? 
+ (ex: _variables.scss)
+
+-get into flexbox
+
+-transitions vs animations
+
+-so I wanna add jquery, but do I user browserify to create
+ dependencies(?) or bundles?? I'm not clear on the use of
+ browserify...
+
+-must import breakpoints soon....
+
+-maybe use min-wdth instead of just width???
+
+-don't think I need to use css minify for browser sync. Need to do it for when it's
+ time for release only??
+*/
+
+$color-orange: #ef4923;
+$section03-background: #0f7bd5;
+/* section01 */
+#section01 {
+}
+
+.page-contents {
+	&--hero-space {
+		position: relative;
+		background-color: #87d37c; // or should I use 'background'???
+		padding: 80px 250px 240px; // should I try out
+		color: #fff;
+		&__hero-image {
+			position: absolute;
+		    left: 135px;
+		    top: 220px;
+		}
+		&__hero-title {
+			font-size: 36px;
+			margin: 0 0 23px;
+			padding: 104px 0 0;
+    		word-spacing: 6px;
+		}
+		&__hero-content {
+		    margin-left: 246px;
+		    min-width: 410px;
+		}
+		&__description {
+	    	margin: 0 0 70px 18px;
+		}
+		&__download-space {
+			max-width: 315px;
+			margin: 0 auto;
+			text-align: center;
+		}
+		&__download-text {
+			font-size: 14px;
+		    margin: 0 0 10px;
+		}
+		h1 {
+			font-size: 40px;
+			font-weight: bold;
+			text-align: center;
+			margin: 0 0 120px;
+			&:after {
+				content: "";
+				background: url(./../images/photo-camera.png) no-repeat center center;
+				padding-left: 80px;
+			}
+		}
+		a {
+			&:nth-of-type(1) {
+		    	margin-right: 6px;
+			}
+		}
+	}
+	&--features {
+		position: relative;
+		padding: 150px 0 240px 117px;
+		color: #505050;
+		&__hero-image {
+		    position: absolute;
+		    right: 150px;
+		    top: 107px;
+		}
+		&__hero-title {
+		    font-size: 26px;
+		    margin: 0px 0px 33px;
+    		word-spacing: 3px;
+		}
+		&__hero-content {
+            max-width: 380px;
+		}
+		&__feature-title {
+			font-size: 18px;
+			margin: 0px 0 8px 10px;
+		}
+		&__feature-description {
+		    margin-left: 10px;
+		        line-height: 150%;
+		}
+		ul{
+			li {
+				color: #9a9a9a;
+				transition: .5s;
+				cursor: pointer;
+				margin: 0 0 28px;
+				&-active, &:hover {
+					color: #505050;
+				}
+			}
+		}
+	}
+	&--video {
+		position: relative;
+		color: #505050;
+		&__hero-title {
+		    font-size: 36px;
+		    margin: 0px 0px 33px;
+    		word-spacing: 3px;
+		}
+		&__hero-content {
+			background-color: #87d37c; 
+		}
+		&__overlay {
+			
+		    position: absolute;
+		    top: 0;
+		    left: 0;
+		    width: 100%;
+		    background: #87d37c;
+		    height: 100%;
+		    opacity: 0.7;
+		}
+		iframe {
+
+    width: 100%;
+    height: 610px;
+		}
+	}
+}
+.page-header {
+	height: 80px;
+	background-color: #fafafa;
+	font-size: 14px;
+	&-fixed {
+		position: fixed;
+		top: 0;
+		left: 0;
+    	width: 100%;
+    	z-index: 9999;
+	}
+	ul {
+	    text-align: center;
+	}
+	.page-header__nav-link {
+		    display: inline-block;
+    padding: 28px 15px;
+    width: 120px;
+    box-sizing: border-box;
+		a {
+			color: #9b9b9b;
+			&-active, &:hover {
+				color: #3b3b3b;
+				font-weight: 700;
+			}
+		}
+	}
+}

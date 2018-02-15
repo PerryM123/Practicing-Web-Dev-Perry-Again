@@ -1,0 +1,33 @@
+@font-face {
+  font-family: 'Museo Sans', sans-serif;
+  // do I need all these calls for font?
+  src: url( './../fonts/MuseoSansCyrl_2.otf'); 
+
+}
+body {
+  font-family: 'Museo Sans', sans-serif;
+  line-height: 150%;
+  box-sizing: border-box;
+}
+p {
+	margin: 0;
+  line-height: 175%;
+}
+.content-inner {
+	min-width: 1080px;
+	margin: 0 auto;
+}
+h2 {
+  font-size: 25px;
+  text-align: center;
+  line-height: 110%;
+}
+a {
+  transition: .7s; 
+  text-decoration: none;
+  color: #000;
+  &:visited {
+    color: #000;
+  }
+}
+// need to add fonts
